@@ -10,6 +10,7 @@ public class PigLatin {
 		char quitResponse = 'y';
 		while (quitResponse == 'y') {
 
+			System.out.println("Please type something I can translate to Pig Latin for you.");
 			String userWord = scnr.nextLine();
 			if (m.areThereWords(userWord)) {
 
@@ -64,5 +65,6 @@ public class PigLatin {
 			realResponse = scnr.nextLine();
 			quitResponse = realResponse.toLowerCase().charAt(0);
 		}
+		System.out.println("Thanks for playing, goodbye.");
 	}
 }
